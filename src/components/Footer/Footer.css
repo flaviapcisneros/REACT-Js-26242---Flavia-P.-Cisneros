@@ -1,0 +1,40 @@
+footer {
+  margin-top: 4rem; /* Espacio entre el contenido de arriba y el footer */
+
+  background: var(--surface); /* Color de fondo del footer */
+  border-top: 1px solid var(--border); /* Línea de separación con el contenido de arriba */
+
+  padding: 1.5rem 3rem; /* Más aire arriba y abajo */
+
+  display: grid; /* Columna 1 (Izq): se estira para el texto, Columna 2 (Der): mide lo que ocupen los íconos */
+  grid-template-columns: auto 1fr; /* Alinea verticalmente todo al centro */
+  align-items: center;
+  row-gap: 0.5rem; /* Espacio entre las filas de texto */
+  column-gap: 2rem; /* Espacio entre las columnas de texto y los íconos */
+}
+
+footer p {
+  /*   Estilo para el párrafo dentro del footer */
+  color: var(--text-secondary); /* Color de texto del footer */
+}
+
+footer .nav-list {
+  /* Estilo para la lista de navegación dentro del footer */
+  gap: 1.5rem; /* Espacio entre los elementos de la lista de navegación */
+}
+
+footer li {
+  /* Estilo para los elementos de la lista de navegación */
+  transition: all 0.25s; /* Transición suave para el efecto hover */
+  cursor: pointer; /* Cambia el cursor a una mano para indicar que es interactivo */
+}
+
+footer li:hover {
+  /* Efecto hover para los elementos de la lista de navegación */
+  color: var(
+    --primary
+  ); /* Cambia el color del texto al color primario al pasar el mouse por encima */
+  transform: scale(
+    1.1
+  ); /* Aumenta ligeramente el tamaño del elemento al pasar el mouse por encima */
+}

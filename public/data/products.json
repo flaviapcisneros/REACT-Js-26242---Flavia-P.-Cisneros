@@ -1,0 +1,64 @@
+[
+  {
+    "id": "1",
+    "name": "N AniMatez",
+    "description": "Figura de acción de N coleccionable",
+    "price": 42373,
+    "image": "/img/AniMatez_N_Front.webp",
+    "category": "figuras"
+  },
+
+  {
+    "id": "2",
+    "name": "Uzi AniMatez",
+    "description": "Figura de acción de Uzi coleccionable",
+    "price": 42550,
+    "image": "/img/AniMatez_Uzi_Front.webp",
+    "category": "figuras"
+  },
+
+  {
+    "id": "3",
+    "name": "V AniMatez",
+    "description": "Figura de acción de V coleccionable",
+    "price": 42373,
+    "image": "/img/AniMatez_V_Front.webp",
+    "category": "figuras"
+  },
+
+  {
+    "id": "4",
+    "name": "Doll AniMatez",
+    "description": "Figura de acción de Doll coleccionable",
+    "price": 42373,
+    "image": "/img/Doll_Front.webp",
+    "category": "figuras"
+  },
+
+  {
+    "id": "5",
+    "name": "N Colgante",
+    "description": "Peluches colgantes",
+    "price": 36348,
+    "image": "/img/N_Pendantz_Default.webp",
+    "category": "peluches"
+  },
+
+  {
+    "id": "6",
+    "name": "Animiniz",
+    "description": "Serie travesuras de media noche",
+    "price": 36348,
+    "image": "/img/MDAniminiz2Hover.webp",
+    "category": "figuras"
+  },
+
+  {
+    "id": "7",
+    "name": "Campera Americana",
+    "description": "Campera universitaria de corte oversize",
+    "price": 50600,
+    "image": "/img/Jacket_Copper_Front.webp",
+    "category": "indumentaria"
+  }
+]
