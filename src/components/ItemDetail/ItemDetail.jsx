@@ -1,16 +1,11 @@
 import "./ItemDetail.css";
 import { Item } from "../Item/Item";
-import { useCart } from "../../context/CartContext";
 
 export const ItemDetail = ({ item }) => {
-  const { addItem } = useCart();
   return (
     <div className="detail-wrapper">
       <Item {...item}>
-        <button
-          className="btn bg-primary primary"
-          onClick={() => addItem(item)}
-        >
+        <button className="btn bg-primary primary">
           Agregar al carrito
         </button>
       </Item>

@@ -5,12 +5,12 @@
 }
 
 :root {
-  --bg: #384152;
-  --surface: #465166;
+  --bg: #000000; /* Background color */
+  --surface: #465166; /* Surface color */
   --card: #546178;
   --border: #68758f;
   --text: #f4f4f4;
-  --text-secondary: #d7dce3;
+  --text-secondary: #9c0a0a;
   --disabled: #8d97ab;
 
   --primary: #f4a261;

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
-import { getProductById } from "../../services/productsService";
 
 export const ItemDetailContainer = () => {
   const { id } = useParams();
@@ -14,8 +13,16 @@ export const ItemDetailContainer = () => {
     setError(null);
     setLoading(true);
 
-    getProductById(id)
-      .then((data) => setItemDetail(data))
+    fetch("/data/products.json")
+      .then((res) => res.json())
+      .then((data) => {
+        const item = data.find(product => product.id === id) /* como mi is esta en string no los convierto en string*/
+        if (item) {
+          setItemDetail (item);
+          return;
+        }
+        throw new Error ("Elemento no encontrado")
+      })
       .catch((error) => setError(error.message))
       .finally(() => setLoading(false));
   }, [id]);

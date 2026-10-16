@@ -12,7 +12,7 @@ export const ItemList = ({ products }) => {
       {products.map((product) => (
         <Link to={`/product/${product.id}`} key={product.id}>
           <Item {...product} />
-        </Link>
+        </Link> /* usamos el link antes para después poder hacer click en el item y que nos lleve a la página del producto */
       ))}
     </div>
   );
